@@ -28,8 +28,7 @@ select
 from users_customuser uc
 left join savings_agg sa on sa.owner_id = uc.id
 left join investments_agg ia on ia.owner_id = uc.id
-where coalesce(sa.savings_count, 0) > 0 or coalesce(ia.investment_count, 0) > 0 -- filters out the 0 from the query
+where coalesce(sa.savings_count, 0) > 0 or coalesce(ia.investment_count, 0) > 0 
 and coalesce(sa.total_savings, 0) + coalesce(ia.total_investments, 0) > 0
 order by total_deposits desc;
-
 
