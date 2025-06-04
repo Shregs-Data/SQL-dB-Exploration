@@ -1,4 +1,4 @@
-# -DataAnalytics-Assessment-
+# -Data & Analytics-
 
 ##  Question 1: Funded Savings & Investment Clients
 
